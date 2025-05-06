@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <title>Фільтр товарів</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <button id="filterBtn" onclick="applyFilters()">🎯 Застосувати</button>
+
+    <h1>🔍 Фільтрування товарів</h1>
+    <form id="filterForm">
+      <div class="filters">
+        <label><input type="checkbox" name="filter" value="red"> Червоний</label>
+        <label><input type="checkbox" name="filter" value="blue"> Синій</label>
+        <label><input type="checkbox" name="filter" value="L"> Розмір L</label>
+        <label><input type="checkbox" name="filter" value="M"> Розмір M</label>
+        <label><input type="checkbox" name="filter" value="cotton"> Бавовна</label>
+        <label><input type="checkbox" name="filter" value="nike"> Nike</label>
+        <label><input type="checkbox" name="filter" value="adidas"> Adidas</label>
+        <label><input type="checkbox" name="filter" value="puma"> Puma</label>
+      </div>
+    </form>
+
+    <div id="results" class="results"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
